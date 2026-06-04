@@ -1,7 +1,6 @@
 import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Features from "@/components/Features";
-import PricingCarousel from "@/components/PricingCarousel";
 import ContactForm from "@/components/ContactForm";
 
 export default function Home() {
@@ -10,7 +9,6 @@ export default function Home() {
       <Hero />
       <About />
       <Features />
-      <PricingCarousel />
       <ContactForm />
     </main>
   );
