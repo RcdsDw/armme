@@ -54,11 +54,11 @@ export default function ContactForm() {
         <div className={styles.grid}>
           <motion.div {...animations.fadeInLeft} className={styles.infoColumn}>
             <h3 className={styles.infoTitle}>Restons en contact</h3>
-            <p className={styles.infoText}>Prêt à transformer ton présence en ligne ? Rencontrons-nous ou discutons à distance.</p>
+            <p className={styles.infoText}>Prêt à transformer votre présence en ligne ? Rencontrons-nous ou discutons à distance.</p>
             <div className={styles.infoList}>
-              <div className={styles.infoItem}><Mail className={styles.icon} /> contact@armme.com</div>
-              <div className={styles.infoItem}><Phone className={styles.icon} /> +33 1 23 45 67 89</div>
-              <div className={styles.infoItem}><MapPin className={styles.icon} /> Paris, France</div>
+              <div className={styles.infoItem}><Mail className={styles.icon} /> armme.dev@gmail.com</div>
+              {/* <div className={styles.infoItem}><Phone className={styles.icon} /> +33 1 23 45 67 89</div> */}
+              <div className={styles.infoItem}><MapPin className={styles.icon} /> Tarbes, France</div>
             </div>
           </motion.div>
 
@@ -66,20 +66,20 @@ export default function ContactForm() {
             <div className={styles.nameGrid}>
               <div className={styles.formGroup}>
                 <label className={styles.label}>Nom</label>
-                <Input name="lastName" placeholder="Dupont" required disabled={loading} />
+                <Input name="lastName" placeholder="Polnareff" required disabled={loading} />
               </div>
               <div className={styles.formGroup}>
                 <label className={styles.label}>Prénom</label>
-                <Input name="firstName" placeholder="Jean" required disabled={loading} />
+                <Input name="firstName" placeholder="Jean Pierre" required disabled={loading} />
               </div>
             </div>
             <div className={styles.formGroup}>
               <label className={styles.label}>Email</label>
-              <Input name="email" type="email" placeholder="jean.dupont@email.com" required disabled={loading} />
+              <Input name="email" type="email" placeholder="jean-pierre.polnareff@email.com" required disabled={loading} />
             </div>
             <div className={styles.formGroup}>
               <label className={styles.label}>Message</label>
-              <textarea name="message" className={styles.textarea} placeholder="Parlez-nous de votre besoin..." required disabled={loading} />
+              <textarea name="message" className={styles.textarea} placeholder="Parlez-moi de votre besoin..." required disabled={loading} />
             </div>
             
             <Button type="submit" className={styles.submitBtn} disabled={loading}>

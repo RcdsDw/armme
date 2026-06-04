@@ -13,15 +13,15 @@ export default function Hero() {
         </motion.h1>
 
         <motion.p {...animations.subtitle} className={styles.subtitle}>
-          La plateforme moderne pour concevoir des sites vitrines à couper le souffle. Alliez la performance à l'élégance du design minimaliste.
+          Conception de sites vitrines d'élite et ingénierie web sur mesure. Alliez la performance technique brute à l'élégance d'un design minimaliste pour transformer vos visiteurs en clients.
         </motion.p>
 
         <motion.div {...animations.ctaContainer} className={styles.ctaContainer}>
           <Button size="lg" className={styles.ctaPrimary} asChild>
-            <a href="#contact">Commencer maintenant <ArrowRight className="h-4 w-4" /></a>
+            <a href="#contact">Discuter de votre projet <ArrowRight className="h-4 w-4" /></a>
           </Button>
           <Button size="lg" variant="outline" asChild>
-            <a href="#about">En savoir plus</a>
+            <a href="#about">Découvrir mon expertise</a>
           </Button>
         </motion.div>
       </div>
@@ -34,7 +34,7 @@ const styles = {
   heroContent: "max-w-4xl mx-auto flex flex-col items-center text-center gap-6",
   title: "text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl max-w-4xl leading-[1.1]",
   titleGradient: "bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent",
-  subtitle: "text-muted-foreground text-lg sm:text-xl max-w-2xl",
+  subtitle: "text-muted-foreground text-lg sm:text-xl max-w-2xl leading-relaxed",
   ctaContainer: "flex flex-wrap items-center justify-center gap-4 mt-4",
   ctaPrimary: "gap-2",
 };

@@ -10,31 +10,31 @@ export default function About() {
       <div className={styles.container}>
         <div className={styles.aboutGrid}>
           
-          {/* Côté Gauche : Texte */}
           <motion.div {...animations.fadeInLeft} className={styles.aboutLeft}>
             <div className={styles.aboutBadge}>
               <User className="h-3.5 w-3.5" />
-              <span>Qui sommes-nous ?</span>
+              <span>Mon approche</span>
             </div>
-            <h2 className={styles.aboutTitle}>Une approche centrée sur votre <span className="text-primary">réussite</span></h2>
+            <h2 className={styles.aboutTitle}>
+              Un seul interlocuteur pour donner vie à vos <span className="text-primary">projets</span>
+            </h2>
             <p className={styles.aboutText}>
-              [Écris ici ton premier paragraphe de présentation. Par exemple : Fondée par des passionnés du web, Armme est née avec l'ambition de casser les codes de la création de sites vitrines.]
+                Professionnel et certifié Concepteur Développeur, je mets mon expertise technique au service de projets de toutes tailles. De la création d'un site vitrine simple, épuré et percutant, jusqu'à la conception d'architectures logicielles plus complexes avec déploiement automatisé, je maîtrise l'intégralité de la chaîne de valeur.
             </p>
             <p className={styles.aboutText}>
-              [Écris ici ton deuxième paragraphe. Explique tes valeurs ou ton histoire : Nous croyons qu'un site web ne doit pas seulement être beau, il doit être une arme de conversion massive pour votre business.]
+                Que vous ayez besoin d'installer une présence en ligne efficace ou d'une intervention ponctuelle en renfort sur un projet existant, je m'adapte à vos besoins. Sans aucun intermédiaire, vous bénéficiez d'une collaboration agile, d'une exécution fluide et d'un site optimisé pour les performances brutes de votre activité.
             </p>
-            <div className="pt-2">
-              <Button variant="link" className="p-0 gap-1 text-base" asChild>
+            <div className={styles.btnContainer}>
+              <Button variant="link" className={styles.linkBtn} asChild>
                 <a href="#contact">Discuter de votre projet <ArrowUpRight className="h-4 w-4" /></a>
               </Button>
             </div>
           </motion.div>
 
-          {/* Côté Droit : Visuel */}
           <motion.div {...animations.fadeInRight} className={styles.aboutRight}>
             <div className={styles.aboutVisualBox}>
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-indigo-500/10 rounded-2xl flex items-center justify-center border-2 border-dashed border-muted-foreground/20">
-                <span className="text-sm font-medium text-muted-foreground">[ Insère ton image ou illustration ici ]</span>
+              <div className={styles.placeholderBox}>
+                <span className={styles.placeholderText}>[ Insère ton image ou illustration ici ]</span>
               </div>
             </div>
           </motion.div>
@@ -51,10 +51,14 @@ const styles = {
   aboutGrid: "grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center",
   aboutLeft: "flex flex-col gap-5 text-left",
   aboutBadge: "inline-flex items-center self-start gap-2 px-3 py-1 rounded-full border bg-muted text-xs font-medium text-muted-foreground",
-  aboutTitle: "text-3xl font-bold tracking-tight sm:text-4xl lg:text-5xl",
+  aboutTitle: "text-3xl font-bold tracking-tight sm:text-4xl lg:text-5xl leading-[1.15]",
   aboutText: "text-muted-foreground text-base sm:text-lg leading-relaxed",
+  btnContainer: "pt-2",
+  linkBtn: "p-0 gap-1 text-base",
   aboutRight: "w-full flex justify-center",
   aboutVisualBox: "w-full max-w-[500px] aspect-[4/3] relative bg-muted/30 rounded-2xl",
+  placeholderBox: "absolute inset-0 bg-gradient-to-br from-primary/10 to-indigo-500/10 rounded-2xl flex items-center justify-center border-2 border-dashed border-muted-foreground/20",
+  placeholderText: "text-sm font-medium text-muted-foreground",
 };
 
 const animations = {
