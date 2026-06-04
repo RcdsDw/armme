@@ -106,12 +106,11 @@ const styles = {
   accordionContent: "pt-4 border-t mt-4 text-sm",
 };
 
-// --- CENTRALISATION DES ANIMATIONS ---
 const animations = {
   card: (delay: number) => ({
     initial: { opacity: 0, y: 30 },
     whileInView: { opacity: 1, y: 0 },
     viewport: { once: true, margin: "-50px" },
-    transition: { delay, duration: 0.5, ease: "easeOut" }
+    transition: { delay, duration: 0.5 }
   })
 };
